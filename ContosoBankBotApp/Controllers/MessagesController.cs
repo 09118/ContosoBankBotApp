@@ -56,7 +56,7 @@ namespace ContosoBankBotApp
                     await stateClient.BotState.DeleteStateForUserAsync(activity.ChannelId, activity.From.Id);
                     isCurrencyRequest = false;
                 }
-                /*
+                
                 if (userMessage.ToLower().Equals("get timelines"))
                 {
                     List<Timeline> timelines = await AzureManager.AzureManagerInstance.GetTimelines();
@@ -87,7 +87,7 @@ namespace ContosoBankBotApp
 
                     endOutput = "New timeline added [" + timeline.Date + "]";
                 }
-                */
+                
             
                 HttpClient client = new HttpClient();
 
