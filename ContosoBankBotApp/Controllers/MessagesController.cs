@@ -65,25 +65,23 @@ namespace ContosoBankBotApp
                     {
                         endOutput += "[" + t.Date + "] Happiness " + t.Happiness + ", Sadness " + t.Sadness + "\n\n";
                     }
-                    
+                    isCurrencyRequest = false;
+
                 }
 
                 if (userMessage.ToLower().Equals("new timeline"))
                 {
                     Timeline timeline = new Timeline()
                     {
-                        Anger = 0.1,
-                        Contempt = 0.2,
-                        Disgust = 0.3,
-                        Fear = 0.3,
+                        Anger = 0.1,                       
                         Happiness = 0.3,
-                        Neutral = 0.2,
                         Sadness = 0.4,
-                        Surprise = 0.4,
                         Date = DateTime.Now
                     };
 
                     await AzureManager.AzureManagerInstance.AddTimeline(timeline);
+
+                    isCurrencyRequest = false;
 
                     endOutput = "New timeline added [" + timeline.Date + "]";
                 }
@@ -93,12 +91,12 @@ namespace ContosoBankBotApp
 
                 string currency = null; //The specific currency user wants to convert. 
                 string baseCurrency = "USD"; //The default base currency is set to USD.
-                string timeLine = "latest";
+                string dateTime = "latest";
                 bool SupportedCurrencyFormat = true; //Check whether user have typed in supported currency format
 
                 if (userMessage.Length > 9)
                 {
-                    if (userMessage.ToLower().Substring(0, 8).Equals("set base"))
+                    if (userMessage.ToLower().Substring(0, 8).Equals("set base") && userMessage.Length == 12)
                     {
                         baseCurrency = userMessage.Substring(9);
                         userData.SetProperty<string>("BaseCurrency", baseCurrency);
@@ -108,10 +106,10 @@ namespace ContosoBankBotApp
                     }
                     if (userMessage.ToLower().Substring(0, 8).Equals("set time"))
                     {
-                        timeLine = userMessage.Substring(9);
-                        userData.SetProperty<string>("TimeLine", timeLine);
+                        dateTime = userMessage.Substring(9);
+                        userData.SetProperty<string>("DateTime", dateTime);
                         await stateClient.BotState.SetUserDataAsync(activity.ChannelId, activity.From.Id, userData);
-                        endOutput = "Now your currency timeline is " + timeLine;
+                        endOutput = "Now your currency time taken is " + dateTime;
                         isCurrencyRequest = false;
                     }
                 }
@@ -121,12 +119,12 @@ namespace ContosoBankBotApp
                     baseCurrency = userData.GetProperty<string>("BaseCurrency");
                 }
 
-                if (userData.GetProperty<string>("TimeLine") != null)
+                if (userData.GetProperty<string>("DateTime") != null)
                 {
-                    timeLine = userData.GetProperty<string>("TimeLine");
-                    if (userData.GetProperty<string>("TimeLine").Contains("LATEST") || userData.GetProperty<string>("TimeLine").Contains("NOW") || userData.GetProperty<string>("TimeLine").Contains("TODAY"))
+                    dateTime = userData.GetProperty<string>("DateTime");
+                    if (userData.GetProperty<string>("DateTime").Contains("LATEST") || userData.GetProperty<string>("DateTime").Contains("NOW") || userData.GetProperty<string>("DateTime").Contains("TODAY"))
                     {
-                        timeLine = "latest";
+                        dateTime = "latest";
                     }
 
                 }
@@ -142,7 +140,7 @@ namespace ContosoBankBotApp
 
                     if (userMessage.Length == 3)
                     {
-                        string x = await client.GetStringAsync(new Uri("http://api.fixer.io/" + timeLine + "?base=" + baseCurrency + "&symbols=" + userMessage));
+                        string x = await client.GetStringAsync(new Uri("http://api.fixer.io/" + dateTime + "?base=" + baseCurrency + "&symbols=" + userMessage));
                         CurrencyObject.RootObject rootObject;
                         rootObject = JsonConvert.DeserializeObject<CurrencyObject.RootObject>(x);
 

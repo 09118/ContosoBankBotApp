@@ -1,10 +1,7 @@
 ﻿using ContosoBankBotApp.DataModels;
 using Microsoft.WindowsAzure.MobileServices;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using System.Web;
 
 namespace ContosoBankBotApp
 {
@@ -17,7 +14,7 @@ namespace ContosoBankBotApp
 
         private AzureManager()
         {
-            this.client = new MobileServiceClient("http://msap2contosobank.azurewebsites.net/");
+            this.client = new MobileServiceClient("https://msap2contosobanktable.azurewebsites.net/");
             this.timelineTable = this.client.GetTable<Timeline>();
         }
 
