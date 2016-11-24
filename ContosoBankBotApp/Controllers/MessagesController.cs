@@ -270,7 +270,7 @@ namespace ContosoBankBotApp
                         }
                         else
                         {
-                            endOutput = "We currently do not supprort currency " + userMessage;
+                            endOutput = "We currently do not support currency " + userMessage;
                             Activity infoReply = activity.CreateReply(endOutput);
                             infoReply = activity.CreateReply(endOutput);
                             await connector.Conversations.ReplyToActivityAsync(infoReply);
