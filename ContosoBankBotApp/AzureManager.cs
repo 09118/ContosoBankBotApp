@@ -11,11 +11,13 @@ namespace ContosoBankBotApp
         private static AzureManager instance;
         private MobileServiceClient client;
         private IMobileServiceTable<Timeline> timelineTable;
+        private IMobileServiceTable<Bankdata> bankdataTable;
 
         private AzureManager()
         {
             this.client = new MobileServiceClient("https://msap2contosobanktable.azurewebsites.net/");
             this.timelineTable = this.client.GetTable<Timeline>();
+            this.bankdataTable = this.client.GetTable<Bankdata>();
         }
 
         public MobileServiceClient AzureClient
@@ -41,9 +43,19 @@ namespace ContosoBankBotApp
             return await this.timelineTable.ToListAsync();
         }
 
+        public async Task<List<Bankdata>> GetBankdatas()
+        {
+            return await this.bankdataTable.ToListAsync();
+        }
+
         public async Task AddTimeline(Timeline timeline)
         {
             await this.timelineTable.InsertAsync(timeline);
+        }
+
+        public async Task AddBankdata(Bankdata bankdata)
+        {
+            await this.bankdataTable.InsertAsync(bankdata);
         }
     }
 }

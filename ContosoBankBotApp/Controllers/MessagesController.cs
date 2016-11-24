@@ -57,6 +57,7 @@ namespace ContosoBankBotApp
                     isCurrencyRequest = false;
                 }
                 
+                /*
                 if (userMessage.ToLower().Equals("get timelines"))
                 {
                     List<Timeline> timelines = await AzureManager.AzureManagerInstance.GetTimelines();
@@ -85,8 +86,39 @@ namespace ContosoBankBotApp
 
                     endOutput = "New timeline added [" + timeline.Date + "]";
                 }
-                
-            
+                */
+
+                if (userMessage.ToLower().Equals("get bankdatas"))
+                {
+                    List<Bankdata> bankdatas = await AzureManager.AzureManagerInstance.GetBankdatas();
+                    endOutput = "";
+                    foreach (Bankdata d in bankdatas)
+                    {
+                        endOutput += "[" + d.Date + "] Firstname: " + d.Firstname + ", Lastname: " + d.Lastname + "\n\n";
+                    }
+                    isCurrencyRequest = false;
+
+                }
+
+                if (userMessage.ToLower().Equals("new bankdata"))
+                {
+                    Bankdata bankdata = new Bankdata()
+                    {
+                        Firstname = "John",
+                        Lastname = "Park",
+                        Balance = 9000.50,
+                        JoinDate = "2016-11-25",
+                        Date = DateTime.Now
+                    };
+
+                    await AzureManager.AzureManagerInstance.AddBankdata(bankdata);
+
+                    isCurrencyRequest = false;
+
+                    endOutput = "New timeline added [" + bankdata.Date + "]";
+                }
+
+
                 HttpClient client = new HttpClient();
 
                 string currency = null; //The specific currency user wants to convert. 
