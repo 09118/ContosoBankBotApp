@@ -46,3 +46,51 @@ C:\Users\acer\Documents\Visual Studio 2015\Projects\ContosoBankBotApp\ContosoBan
 C:\Users\acer\Documents\Visual Studio 2015\Projects\ContosoBankBotApp\ContosoBankBotApp\bin\System.Net.Http.Extensions.xml
 C:\Users\acer\Documents\Visual Studio 2015\Projects\ContosoBankBotApp\ContosoBankBotApp\bin\System.Net.Http.Primitives.xml
 C:\Users\acer\Documents\Visual Studio 2015\Projects\ContosoBankBotApp\ContosoBankBotApp\obj\Debug\ContosoBankBotApp.csproj.App.config
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Bot Application1.dll.config
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Bot Application1.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Bot Application1.pdb
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Autofac.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Chronic.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Microsoft.Bot.Builder.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Microsoft.Bot.Connector.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Microsoft.Rest.ClientRuntime.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Microsoft.WindowsAzure.Mobile.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Microsoft.WindowsAzure.Mobile.Ext.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Newtonsoft.Json.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\System.Net.Http.Extensions.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\System.Net.Http.Formatting.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\System.Net.Http.Primitives.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\System.Web.Http.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\System.Web.Http.WebHost.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Autofac.xml
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Microsoft.Bot.Builder.xml
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Microsoft.Bot.Connector.xml
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Microsoft.IdentityModel.Protocol.Extensions.pdb
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Microsoft.Rest.ClientRuntime.xml
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Microsoft.WindowsAzure.Mobile.xml
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Microsoft.WindowsAzure.Mobile.Ext.xml
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\Newtonsoft.Json.xml
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\System.Net.Http.Extensions.xml
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\System.Net.Http.Formatting.xml
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\System.Net.Http.Primitives.xml
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\System.Web.Http.xml
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\System.Web.Http.WebHost.xml
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\obj\Debug\ContosoBankBotApp.csproj.App.config
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\obj\Debug\ContosoBankBotApp.csprojResolveAssemblyReference.cache
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\obj\Debug\Bot Application1.dll
+C:\Users\acer\Documents\GitHub\ContosoBankBotApp\ContosoBankBotApp\obj\Debug\Bot Application1.pdb

@@ -17,7 +17,7 @@ namespace ContosoBankBotApp
 
         private AzureManager()
         {
-            this.client = new MobileServiceClient("MOBILE_APP_URL");
+            this.client = new MobileServiceClient("http://msap2contosobank.azurewebsites.net/");
             this.timelineTable = this.client.GetTable<Timeline>();
         }
 
